@@ -9,6 +9,10 @@ header {
     justify-content:space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .header__logo {
@@ -46,6 +50,8 @@ button {
 .about__sun-image {
     width: 100px;
     height: 100px;
+    animation: rotation 10s infinite linear;
+    position: absolute;
 }
 
 .about {
@@ -189,4 +195,14 @@ footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg)
+    }
+
+    100% {
+        transform:rotate(360deg)
+    }
 }

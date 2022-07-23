@@ -68,13 +68,13 @@ button {
 .about h1 {
     font-size: 70px;
     line-height: 76px;
-  }
+}
    
 .about p {
     font-size: 18px;
     line-height: 30px;
     opacity: 0.8;
-  }
+}
    
 .about button {
     font-size: 18px;
@@ -102,8 +102,7 @@ button {
     display: flex;
     align-items: center;
     flex-direction: column;
- 
-    
+        
 }
 
 .form__group {
@@ -206,3 +205,75 @@ footer {
         transform:rotate(360deg)
     }
 }
+
+@media (max-width: 720px) {
+
+    
+    header {
+        padding: 10px;
+    }
+
+    .header__logo {
+        height: 20px;
+    }
+
+    header a {
+        margin-right: 10px;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        padding: 50px 10px;
+    }
+
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .about__image {
+        width: 280px;
+    }
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    
+    .form {
+        padding: 50px 10px;
+    }
+
+    .form h1 {
+        font-size: 36px;
+    }
+
+    footer {
+        padding: 50px 10px;
+    }
+    .footer__container {
+        flex-direction: column;
+    }
+    .form__group {
+        width: 300px;
+}
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 115px 20px;
+    }
+  
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+  
+    .about__image {
+        width: 280px;
+    }
+  
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+ }

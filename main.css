@@ -206,6 +206,26 @@ footer {
     }
 }
 
+@media (max-width: 1024px) {
+    .about {
+        padding: 115px 20px;
+    }
+  
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+  
+    .about__image {
+        width: 280px;
+    }
+  
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+}
+
 @media (max-width: 720px) {
 
     
@@ -234,14 +254,21 @@ footer {
     .about__image {
         width: 280px;
     }
+
     .about__sun-image {
         width: 75px;
         height: 75px;
     }
-
     
+    .form__container {
+        width: 100%;
+    }
+
     .form {
         padding: 50px 10px;
+    }
+    .form__submit{
+        margin: 40px 0 15px 0;
     }
 
     .form h1 {
@@ -255,25 +282,7 @@ footer {
         flex-direction: column;
     }
     .form__group {
-        width: 300px;
+        width: auto;
+    }
 }
 
-@media (max-width: 1024px) {
-    .about {
-        padding: 115px 20px;
-    }
-  
-    .about h1 {
-        font-size: 36px;
-        line-height: 40px;
-    }
-  
-    .about__image {
-        width: 280px;
-    }
-  
-    .about__sun-image {
-        width: 75px;
-        height: 75px;
-    }
- }

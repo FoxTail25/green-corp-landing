@@ -195,7 +195,13 @@ footer {
     flex-direction: column;
     margin-bottom: 15px;
 }
-
+.animate__fadeInLeft {
+    animation-duration: 2s;
+    transition: transform;
+}
+.animate__fadeInRight {
+    animation-duration: 2s;
+}
 @keyframes rotation {
     0% {
         transform:rotate(0deg)

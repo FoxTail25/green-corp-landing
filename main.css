@@ -197,7 +197,6 @@ footer {
 }
 .animate__fadeInLeft {
     animation-duration: 2s;
-    transition: transform;
 }
 .animate__fadeInRight {
     animation-duration: 2s;

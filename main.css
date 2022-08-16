@@ -88,6 +88,9 @@ button {
 .about__info {
     max-width: 550px;
 }
+.features{
+    padding: 115px 60px 115px 60px;
+}
 
 .form__container {
     width: 550px;

@@ -267,6 +267,17 @@ footer {
         width: 75px;
         height: 75px;
     }
+    .features {
+        padding: 50px 10px 50px 10px;
+    }
+    .cards {
+        display: grid;
+        grid-column: 1fr 1fr 1fr;
+        grid-row: 1fr;
+    }
+    .card {
+        border: solid;
+    }
     
     .form__container {
         width: 100%;

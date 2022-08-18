@@ -129,9 +129,10 @@ opacity: 0.8;
 }
 .features__feedback {
     display: flex;
+    align-items: center;
 }
 .features__feedback-left {
-    padding-right: 10px;
+    margin-right: 10px;
 }
 .features__feedback-left h2 {
     font-size: 48px;
@@ -143,11 +144,75 @@ opacity: 0.8;
 }
 .features__feedback-right {
     display: flex;
-    align-items: center;
+    
+    
+}
+.features__box {
+    padding: 30px 40px 25px 40px;
+    border-radius: 25px;
+    color: white;
+    
+}
+
+.features__box h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.features__savings-box {
+    background-color: #dc5e26;
+    box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
+    margin-right: 30px;
 }
 
 
-.form {
+.features__rate-box {
+    background-color: #1D263A;
+    box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
+}
+.stars {
+    color: #ff7039;
+}
+.promo {
+    display: flex;
+    
+}
+.promo__image {
+    background-image: url(../img/promo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+    flex-shrink: 0;
+}
+.promo__right {
+    background-color: #dd5f26;
+    padding: 160px 60px 160px 60px;
+}
+
+.promo__right__card {
+    background-color: white;
+    padding: 30px 40px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+.promo__right__card p {
+    opacity: 0.8;
+}
+.circl {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ec6b29;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 7px;
+}
+    .form {
     background-color: #1D263A;
     color: #fff;
     padding-top: 115px;
@@ -332,7 +397,7 @@ footer {
     }
     
     .features__feedback-left {
-        padding-right: 0px;
+        margin-right: 0px;
     }
     
     .features__feedback-left h2 {
@@ -342,9 +407,37 @@ footer {
     .features__feedback-right {
         display: flex;
         flex-direction: column;
+        align-items: normal;
         
     }
-
+    
+    .features__box h3 {
+        font-size: 36px;
+    }
+    
+    .features__savings-box {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .promo {
+        display: flex;
+        flex-direction: column-reverse;    
+    }
+    .promo__image {
+        background-image: url(../img/promo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100vw;
+        flex-shrink: 0;
+    }
+    
+    .promo__right {
+        background-color: #dd5f26;
+        padding: 50px 10px 50px 10px;
+    }
+    
     .form__container {
         width: 100%;
     }

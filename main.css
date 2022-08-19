@@ -89,7 +89,7 @@ button {
     max-width: 550px;
 }
 .features{
-    padding: 115px 60px 115px 60px;
+    padding: 115px 60px;
 }
 
 .form__container {
@@ -97,11 +97,12 @@ button {
 }
 .cards {
     display: grid;
+    grid-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
 }
 .card {
     border: solid 1px #D9E4E6;
+    background: #FFFFFF;
     border-radius: 5px;
     padding: 35px 40px 25px 40px;
 }
@@ -114,7 +115,7 @@ button {
     border-radius: 50%;
     font-size: 32px;
     font-weight: 700;
-    background-color: #eaeff9;
+    background: #eaeff9;
 }
 
 .card p {
@@ -126,6 +127,7 @@ opacity: 0.8;
 .features__border {
     margin: 50px 0 50px 0;
     border: 1px solid #E6EAF4;
+    width: 100%;
 }
 .features__feedback {
     display: flex;
@@ -177,18 +179,19 @@ opacity: 0.8;
 .promo {
     display: flex;
     
+    
 }
 .promo__image {
     background-image: url(../img/promo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 50vw;
+    width: 50%;
     flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    
 }
 .promo__right {
     background-color: #dd5f26;
-    padding: 160px 60px 160px 60px;
+    padding: 160px 60px;
 }
 
 .promo__right__card {
@@ -211,6 +214,21 @@ opacity: 0.8;
     margin-right: 10px;
     position: relative;
     top: 7px;
+}
+.promo__btn {
+    background-color: #107b1c;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 15px 30px;
+    font-weight: 600;
+}
+.promo__btn_center {
+    display: flex;
+    justify-content: center;
+}
+.promo__btn__fa {
+    font-size: 15px;
+    margin-left: 5px;
 }
     .form {
     background-color: #1D263A;
@@ -348,6 +366,11 @@ footer {
         width: 75px;
         height: 75px;
     }
+    .features {
+        padding: 50px 10px;
+    }
+  
+
 }
 
 @media (max-width: 720px) {
@@ -384,10 +407,10 @@ footer {
         height: 75px;
     }
     .features {
-        padding: 50px 10px 50px 10px;
+        padding: 50px 10px;
     }
     .cards {
-        display: grid;
+        
         grid-template-columns: auto;
     }
     
@@ -400,14 +423,14 @@ footer {
         margin-right: 0px;
     }
     
-    .features__feedback-left h2 {
+    .features__feedback-left h2 .features__box h3 {
         font-size: 36px;
     }
     
     .features__feedback-right {
         display: flex;
         flex-direction: column;
-        align-items: normal;
+        align-items: initial;
         
     }
     
@@ -421,21 +444,17 @@ footer {
     }
     
     .promo {
-        display: flex;
         flex-direction: column-reverse;    
     }
     .promo__image {
-        background-image: url(../img/promo.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
-        width: 100vw;
-        flex-shrink: 0;
+       height: 500px;
+        width: 100%;
+        
     }
     
     .promo__right {
         background-color: #dd5f26;
-        padding: 50px 10px 50px 10px;
+        padding: 50px 10px;
     }
     
     .form__container {

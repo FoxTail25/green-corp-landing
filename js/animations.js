@@ -1,3 +1,4 @@
+// анимация с бегущими цифрами
 const INCREASE_NUMBER_ANIMATION_SPEED = 50;
 function increaseNumberAnimationStep(i, element, endNumber) {
    
@@ -21,6 +22,9 @@ function initIncreaseNumberAnimation() {
 
 initIncreaseNumberAnimation();
 
+
+// добавление поля в форму при выборе "другое"
+
 document.querySelector('#budget').addEventListener('change', function handleSelectChange(event) {
     if (event.target.value === 'other') {
       const formContainer = document.createElement('div');
@@ -35,7 +39,36 @@ document.querySelector('#budget').addEventListener('change', function handleSele
       document.querySelector('#form form').insertBefore(formContainer, document.querySelector('.form__submit')); 
     }
    
-    if (event.target.value !== 'other') {
-      // ...
-    }
+    const otherInput = document.querySelector('.form__other-input');
+  if (event.target.value !== 'other' && otherInput) {
+        const otherInput = document.querySelector('.form__other-input');
+        document.querySelector('#form form').removeChild(otherInput);
+      }
   });
+
+  // Плавный скролл
+
+  function onLinkClick(event) {
+      event.preventDefault();
+
+      document.querySelector(event.target.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+    
+    function addSmoothScroll(anchor) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+         
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        addSmoothScroll(anchor);
+      });
+
+      addSmoothScroll(document.querySelector('.more-button'));
+

@@ -195,7 +195,7 @@ opacity: 0.8;
     
 }
 .promo__image {
-    background-image: url(../img/promo.jpg);
+    background-image: url('./img/promo.jpg');
     width: 50%;
     flex-shrink: 0;
     background-size: cover;
@@ -205,7 +205,7 @@ opacity: 0.8;
 .promo__right {
     background-color: #dd5f26;
     padding: 160px 60px;
-    width: 100%;
+    width: 100%
 }
 
 .promo__right__card {
